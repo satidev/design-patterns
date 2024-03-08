@@ -4,9 +4,6 @@
 
 namespace VisitorGOF
 {
-
-Shape::~Shape() = default;
-
 void Shape::printName() const
 {
     std::cout << "Shape" << std::endl;
@@ -31,6 +28,27 @@ void shapeVisitorExamples()
         shape->accept(DrawVisitor{});
         shape->accept(RotateVisitor{});
     }
+}
+
+void DrawVisitor::visit(const Circle &c) const
+{
+    std::cout << "Drawing";
+    c.printName();
+}
+void DrawVisitor::visit(const Square &s) const
+{
+    std::cout << "Drawing";
+    s.printName();
+}
+void RotateVisitor::visit(const Circle &c) const
+{
+    std::cout << "Rotating";
+    c.printName();
+}
+void RotateVisitor::visit(const Square &s) const
+{
+    std::cout << "Rotating";
+    s.printName();
 }
 
 }// VisitorGOF namespace.

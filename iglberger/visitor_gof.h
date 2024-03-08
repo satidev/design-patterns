@@ -5,28 +5,25 @@
 
 namespace VisitorGOF
 {
+struct Circle;
+struct Square;
 
-class Circle;
-class Square;
-
-class ShapeVisitor
+struct ShapeVisitor
 {
-public:
+    virtual ~ShapeVisitor() = default;
     virtual void visit(Circle const &c) const = 0;
     virtual void visit(Square const &c) const = 0;
 };
 
-class Shape
+struct Shape
 {
-public:
-    virtual ~Shape() = 0;
+    virtual ~Shape() = default;
     virtual void printName() const = 0;
     virtual void accept(ShapeVisitor const& v) = 0;
 };
 
-class Circle final: public Shape
+struct Circle final: public Shape
 {
-public:
     ~Circle() override = default;
     void printName() const override;
     void accept(ShapeVisitor const &v) override{
@@ -34,40 +31,28 @@ public:
     }
 };
 
-class Square final: public Shape
+struct Square final: public Shape
 {
-public:
     ~Square() override = default;
     void printName() const override;
-    void accept(ShapeVisitor const &v) override{
+    void accept(ShapeVisitor const &v) override
+    {
         v.visit(*this);
     }
 };
 
-class DrawVisitor final: public ShapeVisitor
+struct DrawVisitor final: public ShapeVisitor
 {
-public:
-    void visit(Circle const &c) const override{
-        std::cout << "Drawing ";
-        c.printName();
-    }
-    void visit(Square const &c) const override{
-        std::cout << "Drawing ";
-        c.printName();
-    }
+    ~DrawVisitor() override = default;
+    void visit(Circle const &c) const override;
+    void visit(Square const &s) const override;
 };
 
-class RotateVisitor final: public ShapeVisitor
+struct RotateVisitor final: public ShapeVisitor
 {
-public:
-    void visit(Circle const &c) const override{
-        std::cout << "Rotating ";
-        c.printName();
-    }
-    void visit(Square const &c) const override{
-        std::cout << "Rotating ";
-        c.printName();
-    }
+    ~RotateVisitor() override = default;
+    void visit(Circle const &c) const override;
+    void visit(Square const &s) const override;
 };
 
 void shapeVisitorExamples();
