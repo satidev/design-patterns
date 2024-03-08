@@ -4,5 +4,5 @@ project(design_patterns)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(design_patterns main.cpp
-        visitor_gof.h
-        visitor_gof.cpp)
+        iglberger/visitor_gof.h
+        iglberger/visitor_gof.cpp)
