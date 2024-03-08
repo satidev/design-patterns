@@ -3,6 +3,9 @@
 
 #include <iostream>
 
+namespace VisitorGOF
+{
+
 class Circle;
 class Square;
 
@@ -68,6 +71,10 @@ public:
 };
 
 void shapeVisitorExamples();
+
+}// VisitorGOF namespace.
+
+
 #endif //VISITOR_GOF_H
 
 

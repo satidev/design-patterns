@@ -2,6 +2,9 @@
 #include <vector>
 #include <memory>
 
+namespace VisitorGOF
+{
+
 Shape::~Shape() = default;
 
 void Shape::printName() const
@@ -24,8 +27,10 @@ void shapeVisitorExamples()
     shapes.emplace_back(std::make_unique<Circle>());
     shapes.emplace_back(std::make_unique<Square>());
 
-    for(auto const& shape:shapes){
+    for (auto const &shape: shapes) {
         shape->accept(DrawVisitor{});
         shape->accept(RotateVisitor{});
     }
 }
+
+}// VisitorGOF namespace.

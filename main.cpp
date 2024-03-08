@@ -2,6 +2,6 @@
 
 int main()
 {
-    shapeVisitorExamples();
+    VisitorGOF::shapeVisitorExamples();
 }
 
