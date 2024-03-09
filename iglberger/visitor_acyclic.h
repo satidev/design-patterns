@@ -46,8 +46,8 @@ struct DrawVisitor: public AbstractVisitor,
 };
 
 struct RotateVisitor: public AbstractVisitor,
-                        Visitor<Circle>,
-                        Visitor<Square>
+                      Visitor<Circle>,
+                      Visitor<Square>
 {
     void visit(Circle const &c) const override;
     void visit(Square const &s) const override;

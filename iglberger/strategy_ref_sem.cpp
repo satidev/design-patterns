@@ -40,7 +40,7 @@ void strategyExamples()
     shapes.emplace_back(std::make_unique<Square>(std::make_unique<OpenGLSquareDrawStrategy>()));
     shapes.emplace_back(std::make_unique<Square>(std::make_unique<VulkanSquareDrawStrategy>()));
 
-    for(auto const& shape:shapes)
+    for (auto const &shape: shapes)
         shape->draw();
 }
 } //StrategyRefSem namespace.

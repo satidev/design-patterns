@@ -43,7 +43,7 @@ void shapeVisitorExamples()
     shapes.emplace_back(Circle{});
     shapes.emplace_back(Square{});
 
-    for(auto const& shape:shapes){
+    for (auto const &shape: shapes) {
         std::visit(Draw{}, shape);
         std::visit(Rotate{}, shape);
     }

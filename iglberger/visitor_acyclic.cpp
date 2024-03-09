@@ -11,7 +11,7 @@ void Circle::printName() const
 }
 void Circle::accept(const AbstractVisitor &v)
 {
-    if(auto const *cv = dynamic_cast<Visitor<Circle> const*>(&v)){
+    if (auto const *cv = dynamic_cast<Visitor<Circle> const *>(&v)) {
         cv->visit(*this);
     }
 }
@@ -21,7 +21,7 @@ void Square::printName() const
 }
 void Square::accept(const AbstractVisitor &v)
 {
-    if(auto const *cv = dynamic_cast<Visitor<Square> const*>(&v)){
+    if (auto const *cv = dynamic_cast<Visitor<Square> const *>(&v)) {
         cv->visit(*this);
     }
 }

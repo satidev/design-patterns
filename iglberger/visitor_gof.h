@@ -19,14 +19,15 @@ struct Shape
 {
     virtual ~Shape() = default;
     virtual void printName() const = 0;
-    virtual void accept(ShapeVisitor const& v) = 0;
+    virtual void accept(ShapeVisitor const &v) = 0;
 };
 
 struct Circle final: public Shape
 {
     ~Circle() override = default;
     void printName() const override;
-    void accept(ShapeVisitor const &v) override{
+    void accept(ShapeVisitor const &v) override
+    {
         v.visit(*this);
     }
 };
