@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-namespace StrategyRefSem
+namespace Iglberger::StrategyRefSem
 {
 void Circle::draw()
 {
@@ -43,4 +43,4 @@ void strategyExamples()
     for (auto const &shape: shapes)
         shape->draw();
 }
-} //StrategyRefSem namespace.
+} //Iglberger::StrategyRefSem namespace.

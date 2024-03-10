@@ -4,7 +4,7 @@
 #include <memory>
 #include <stack>
 
-namespace CommandRefSem
+namespace Iglberger::CommandRefSem
 {
 struct CalcCommand
 {
@@ -73,7 +73,7 @@ private:
 };
 
 void commandExample();
-}// CommandRefSem namespace.
+}// Iglberger::CommandRefSem namespace.
 
 #endif //COMMAND_REF_SEM_H
 

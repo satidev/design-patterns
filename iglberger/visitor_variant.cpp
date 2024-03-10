@@ -3,7 +3,7 @@
 #include <variant>
 #include <vector>
 
-namespace VisitorVariant
+namespace Iglberger::VisitorVariant
 {
 void Circle::printName() const
 {
@@ -49,4 +49,4 @@ void shapeVisitorExamples()
     }
 }
 
-}// VisitorVariant.
+}// Iglberger::VisitorVariant.

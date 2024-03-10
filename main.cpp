@@ -13,6 +13,6 @@ int main()
     //StrategyRefSem::strategyExamples();
     //CommandRefSem::commandExample();
     //StrategyValSem::strategyExamples();
-    CommandValSem::commandExample();
+    Iglberger::CommandValSem::commandExample();
 }
 

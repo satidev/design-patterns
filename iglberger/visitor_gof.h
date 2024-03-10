@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-namespace VisitorGOF
+namespace Iglberger::VisitorGOF
 {
 struct Circle;
 struct Square;
@@ -58,7 +58,7 @@ struct RotateVisitor final: public ShapeVisitor
 
 void shapeVisitorExamples();
 
-}// VisitorGOF namespace.
+}// Iglberger::VisitorGOF namespace.
 
 
 #endif //VISITOR_GOF_H

@@ -1,7 +1,7 @@
 #ifndef VISITOR_VARIANT_H
 #define VISITOR_VARIANT_H
 
-namespace VisitorVariant
+namespace Iglberger::VisitorVariant
 {
 // No base class for shapes
 struct Circle
@@ -28,7 +28,7 @@ struct Rotate
 
 void shapeVisitorExamples();
 
-}// VisitorVariant namespace.
+}// Iglberger::VisitorVariant namespace.
 
 #endif //VISITOR_VARIANT_H
 

@@ -4,7 +4,7 @@
 #include <queue>
 #include <functional>
 
-namespace CommandValSem
+namespace Iglberger::CommandValSem
 {
 
 struct Image
@@ -53,7 +53,7 @@ private:
 
 void commandExample();
 
-}// CommandValSem namespace.
+}// Iglberger::CommandValSem namespace.
 
 #endif //COMMAND_VAL_SEM_H
 

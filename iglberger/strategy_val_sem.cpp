@@ -2,7 +2,7 @@
 #include <iostream>
 #include <memory>
 
-namespace StrategyValSem
+namespace Iglberger::StrategyValSem
 {
 
 void OpenGLCircleDrawStrategy::operator()(const Circle &circle)
@@ -48,4 +48,4 @@ void OpenGLSquareDrawStrategy::operator()(const Square &circle)
 {
     std::cout << "Drawing " << circle.name() << " using OpenGL." << std::endl;
 }
-}// StrategyValSem namespace.
+}// Iglberger::StrategyValSem namespace.

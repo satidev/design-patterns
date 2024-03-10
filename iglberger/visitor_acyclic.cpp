@@ -3,7 +3,7 @@
 #include <vector>
 #include <memory>
 
-namespace VisitorAcyclic
+namespace Iglberger::VisitorAcyclic
 {
 void Circle::printName() const
 {
@@ -59,4 +59,4 @@ void shapeVisitorExamples()
     }
 }
 
-}// VisitorAcyclic namespace.
+}// Iglberger::VisitorAcyclic namespace.

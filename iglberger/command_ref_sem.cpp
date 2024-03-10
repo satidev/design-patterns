@@ -2,7 +2,7 @@
 #include <utility>
 #include <iostream>
 
-namespace CommandRefSem
+namespace Iglberger::CommandRefSem
 {
 void Calculator::compute(std::unique_ptr<CalcCommand> command)
 {
@@ -35,4 +35,4 @@ void commandExample()
 
     calc.clear();
 }
-}// CommandRefSem namespace.
+}// Iglberger::CommandRefSem namespace.

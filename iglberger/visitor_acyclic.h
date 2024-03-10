@@ -1,7 +1,7 @@
 #ifndef VISITOR_ACYCLIC_H
 #define VISITOR_ACYCLIC_H
 
-namespace VisitorAcyclic
+namespace Iglberger::VisitorAcyclic
 {
 // Just for tagging.
 struct AbstractVisitor
@@ -55,7 +55,7 @@ struct RotateVisitor: public AbstractVisitor,
 
 void shapeVisitorExamples();
 
-}// VisitorAcyclic namespace.
+}// Iglberger::VisitorAcyclic namespace.
 
 #endif //VISITOR_ACYCLIC_H
 

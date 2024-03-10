@@ -2,7 +2,7 @@
 #include <vector>
 #include <memory>
 
-namespace VisitorGOF
+namespace Iglberger::VisitorGOF
 {
 void Shape::printName() const
 {
@@ -51,4 +51,4 @@ void RotateVisitor::visit(const Square &s) const
     s.printName();
 }
 
-}// VisitorGOF namespace.
+}// Iglberger::VisitorGOF namespace.

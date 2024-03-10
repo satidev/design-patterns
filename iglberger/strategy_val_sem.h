@@ -4,7 +4,7 @@
 #include <string>
 #include <functional>
 
-namespace StrategyValSem
+namespace Iglberger::StrategyValSem
 {
 struct Shape
 {
@@ -70,7 +70,7 @@ void VulkanSquareDrawStrategy(Square const &circle);
 
 void strategyExamples();
 
-}// StrategyValSem namespace.
+}// Iglberger::StrategyValSem namespace.
 
 #endif //STRATEGY_VAL_SEM_H
 

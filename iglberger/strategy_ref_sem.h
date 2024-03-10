@@ -4,7 +4,7 @@
 #include <memory>
 #include <string>
 
-namespace StrategyRefSem
+namespace Iglberger::StrategyRefSem
 {
 struct Shape
 {
@@ -76,7 +76,7 @@ struct VulkanSquareDrawStrategy final: public DrawStrategy<Square>
 
 void strategyExamples();
 
-} //StrategyRefSem namespace.
+} //Iglberger::StrategyRefSem namespace.
 
 
 #endif //STRATEGY_REF_SEM_H

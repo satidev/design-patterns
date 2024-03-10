@@ -1,7 +1,7 @@
 #include "command_val_sem.h"
 #include <iostream>
 
-namespace CommandValSem
+namespace Iglberger::CommandValSem
 {
 void Scale::operator()(Image &img) const
 {
@@ -20,4 +20,4 @@ void commandExample()
     auto img = Image{};
     proc.run(img);
 }
-}// CommandValSem namespace.
+}// Iglberger::CommandValSem namespace.
