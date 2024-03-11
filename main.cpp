@@ -6,6 +6,8 @@
 #include "iglberger/strategy_val_sem.h"
 #include "iglberger/command_val_sem.h"
 #include "head_first/strategy.h"
+#include "iglberger/adaptor_object.h"
+
 int main()
 {
     //VisitorGOF::shapeVisitorExamples();
@@ -15,6 +17,7 @@ int main()
     //CommandRefSem::commandExample();
     //StrategyValSem::strategyExamples();
     //Iglberger::CommandValSem::commandExample();
-    HeadFirst::Strategy::strategyExamples();
+    //HeadFirst::Strategy::strategyExamples();
+    Iglberger::Adaptor::adaptorExample();
 }
 

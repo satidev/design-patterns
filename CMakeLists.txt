@@ -19,4 +19,6 @@ add_executable(design_patterns main.cpp
         iglberger/command_val_sem.h
         iglberger/command_val_sem.cpp
         head_first/strategy.h
-        head_first/strategy.cpp)
+        head_first/strategy.cpp
+        iglberger/adaptor_object.h
+        iglberger/adaptor_object.cpp)
