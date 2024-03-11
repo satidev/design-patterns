@@ -7,6 +7,7 @@
 #include "iglberger/command_val_sem.h"
 #include "head_first/strategy.h"
 #include "iglberger/adaptor_object.h"
+#include "iglberger/adaptor_class.h"
 
 int main()
 {
@@ -18,6 +19,6 @@ int main()
     //StrategyValSem::strategyExamples();
     //Iglberger::CommandValSem::commandExample();
     //HeadFirst::Strategy::strategyExamples();
-    Iglberger::Adaptor::adaptorExample();
+    Iglberger::AdaptorClass::adaptorExample();
 }
 
