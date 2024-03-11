@@ -8,7 +8,7 @@
 #include "head_first/strategy.h"
 #include "iglberger/adaptor_object.h"
 #include "iglberger/adaptor_class.h"
-
+#include "iglberger/adaptor_function.h"
 int main()
 {
     //VisitorGOF::shapeVisitorExamples();
@@ -19,6 +19,7 @@ int main()
     //StrategyValSem::strategyExamples();
     //Iglberger::CommandValSem::commandExample();
     //HeadFirst::Strategy::strategyExamples();
-    Iglberger::AdaptorClass::adaptorExample();
+    //Iglberger::AdaptorClass::adaptorExample();
+    Iglberger::AdaprorFunc::funcAdaptorExample();
 }
 
