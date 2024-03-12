@@ -10,7 +10,7 @@
 #include "iglberger/adaptor_class.h"
 #include "iglberger/adaptor_function.h"
 #include "iglberger/observer_push.h"
-
+#include "iglberger/observer_pull.h"
 int main()
 {
     //VisitorGOF::shapeVisitorExamples();
@@ -23,6 +23,7 @@ int main()
     //HeadFirst::Strategy::strategyExamples();
     //Iglberger::AdaptorClass::adaptorExample();
     //Iglberger::AdaprorFunc::funcAdaptorExample();
-    Iglberger::ObserverPush::observerPullExample();
+    //Iglberger::ObserverPush::observerPullExample();
+    Iglberger::ObserverPull::observerPullEx();
 }
 
