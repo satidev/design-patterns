@@ -25,4 +25,6 @@ add_executable(design_patterns main.cpp
         iglberger/adaptor_class.h
         iglberger/adaptor_class.cpp
         iglberger/adaptor_function.h
-        iglberger/adaptor_function.cpp)
+        iglberger/adaptor_function.cpp
+        iglberger/observer_push.h
+        iglberger/observer_push.cpp)
