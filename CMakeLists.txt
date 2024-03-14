@@ -29,4 +29,6 @@ add_executable(design_patterns main.cpp
         iglberger/observer_push.h
         iglberger/observer_push.cpp
         iglberger/observer_pull.h
-        iglberger/observer_pull.cpp)
+        iglberger/observer_pull.cpp
+        iglberger/crtp.h
+        iglberger/crtp.cpp)
