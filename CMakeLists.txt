@@ -40,4 +40,8 @@ add_executable(design_patterns main.cpp
         iglberger/bridge/person.h
         iglberger/bridge/person.cpp
         iglberger/prototype.h
-        iglberger/prototype.cpp)
+        iglberger/prototype.cpp
+        iglberger/decorator_ref.h
+        iglberger/decorator_ref.cpp
+        iglberger/decorator_compile_time.h
+        iglberger/decorator_compile_time.cpp)

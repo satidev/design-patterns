@@ -15,7 +15,8 @@
 //#include "iglberger/bridge/electric_car.h"
 //#include "iglberger/bridge/person.h"
 #include "iglberger/prototype.h"
-
+#include "iglberger/decorator_ref.h"
+#include "iglberger/decorator_compile_time.h"
 int main()
 {
     //VisitorGOF::shapeVisitorExamples();
@@ -32,6 +33,8 @@ int main()
     //Iglberger::ObserverPull::observerPullEx();
     //Iglberger::CRTP::CRTPExample();
     //Iglberger::PersonPimplEx();
-    Iglberger::Prototype::prototypeEx();
+    //Iglberger::Prototype::prototypeEx();
+    //Iglberger::itemDecoratorEx();
+    Iglberger::DecoratorValCompileTime::decoratorValueCompileTimeEx();
 }
 
