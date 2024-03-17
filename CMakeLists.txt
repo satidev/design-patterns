@@ -31,4 +31,13 @@ add_executable(design_patterns main.cpp
         iglberger/observer_pull.h
         iglberger/observer_pull.cpp
         iglberger/crtp.h
-        iglberger/crtp.cpp)
+        iglberger/crtp.cpp
+        iglberger/bridge/abstract_engine.h
+        iglberger/bridge/electric_engine.h
+        iglberger/bridge/electric_car.h
+        iglberger/bridge/electric_car.cpp
+        iglberger/bridge/car.h
+        iglberger/bridge/person.h
+        iglberger/bridge/person.cpp
+        iglberger/prototype.h
+        iglberger/prototype.cpp)

@@ -12,6 +12,9 @@
 #include "iglberger/observer_push.h"
 #include "iglberger/observer_pull.h"
 #include "iglberger/crtp.h"
+//#include "iglberger/bridge/electric_car.h"
+//#include "iglberger/bridge/person.h"
+#include "iglberger/prototype.h"
 
 int main()
 {
@@ -27,6 +30,8 @@ int main()
     //Iglberger::AdaprorFunc::funcAdaptorExample();
     //Iglberger::ObserverPush::observerPullExample();
     //Iglberger::ObserverPull::observerPullEx();
-    Iglberger::CRTP::CRTPExample();
+    //Iglberger::CRTP::CRTPExample();
+    //Iglberger::PersonPimplEx();
+    Iglberger::Prototype::prototypeEx();
 }
 
