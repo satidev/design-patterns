@@ -17,6 +17,7 @@
 #include "iglberger/prototype.h"
 #include "iglberger/decorator_ref.h"
 #include "iglberger/decorator_compile_time.h"
+#include "iglberger/singleton.h"
 int main()
 {
     //VisitorGOF::shapeVisitorExamples();
@@ -35,6 +36,7 @@ int main()
     //Iglberger::PersonPimplEx();
     //Iglberger::Prototype::prototypeEx();
     //Iglberger::itemDecoratorEx();
-    Iglberger::DecoratorValCompileTime::decoratorValueCompileTimeEx();
+    //Iglberger::DecoratorValCompileTime::decoratorValueCompileTimeEx();
+    Iglberger::singletonEx();
 }
 
