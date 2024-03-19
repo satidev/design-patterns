@@ -18,6 +18,7 @@
 #include "iglberger/decorator_ref.h"
 #include "iglberger/decorator_compile_time.h"
 #include "iglberger/singleton.h"
+#include "iglberger/extern_polymorph.h"
 int main()
 {
     //VisitorGOF::shapeVisitorExamples();
@@ -37,6 +38,7 @@ int main()
     //Iglberger::Prototype::prototypeEx();
     //Iglberger::itemDecoratorEx();
     //Iglberger::DecoratorValCompileTime::decoratorValueCompileTimeEx();
-    Iglberger::singletonEx();
+    //Iglberger::singletonEx();
+    Iglberger::ExternPolymorph::externPolymorphEx();
 }
 
