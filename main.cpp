@@ -18,7 +18,8 @@
 #include "iglberger/decorator_ref.h"
 #include "iglberger/decorator_compile_time.h"
 #include "iglberger/singleton.h"
-#include "iglberger/extern_polymorph.h"
+//#include "iglberger/extern_polymorph.h"
+#include "iglberger/type_erasure.h"
 int main()
 {
     //VisitorGOF::shapeVisitorExamples();
@@ -39,6 +40,7 @@ int main()
     //Iglberger::itemDecoratorEx();
     //Iglberger::DecoratorValCompileTime::decoratorValueCompileTimeEx();
     //Iglberger::singletonEx();
-    Iglberger::ExternPolymorph::externPolymorphEx();
+    //Iglberger::ExternPolymorph::externPolymorphEx();
+    Iglberger::TypeErasure::typeErasureExample();
 }
 

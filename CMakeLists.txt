@@ -48,4 +48,6 @@ add_executable(design_patterns main.cpp
         iglberger/singleton.h
         iglberger/singleton.cpp
         iglberger/extern_polymorph.h
-        iglberger/extern_polymorph.cpp)
+        iglberger/extern_polymorph.cpp
+        iglberger/type_erasure.h
+        iglberger/type_erasure.cpp)
