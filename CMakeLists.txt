@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.26)
 project(design_patterns)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 add_executable(design_patterns main.cpp
         iglberger/visitor_gof.h
@@ -50,4 +50,6 @@ add_executable(design_patterns main.cpp
         iglberger/extern_polymorph.h
         iglberger/extern_polymorph.cpp
         iglberger/type_erasure.h
-        iglberger/type_erasure.cpp)
+        iglberger/type_erasure.cpp
+        iglberger/type_erasure_sbo.h
+        iglberger/type_erasure_sbo.cpp)
