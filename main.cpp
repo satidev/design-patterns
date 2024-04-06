@@ -5,7 +5,6 @@
 #include "iglberger/command_ref_sem.h"
 #include "iglberger/strategy_val_sem.h"
 #include "iglberger/command_val_sem.h"
-#include "head_first/strategy.h"
 #include "iglberger/adaptor_object.h"
 #include "iglberger/adaptor_class.h"
 #include "iglberger/adaptor_function.h"
