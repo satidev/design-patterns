@@ -5,6 +5,7 @@
 #include <utility>
 #include <set>
 
+// Subject pushes the relevant detail to the observers.
 namespace Iglberger::ObserverPush
 {
 class EmployeeObserver
@@ -55,6 +56,9 @@ public:
 private:
     std::string name_;
     float salary_;
+    // Pointer is a unique identifier.
+    // set avoids duplication of observers.
+    // Non-owning pointers.
     std::set<EmployeeObserver*> observers_;
 };
 

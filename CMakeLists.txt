@@ -24,10 +24,10 @@ add_executable(design_patterns main.cpp
         iglberger/adaptor_class.cpp
         iglberger/adaptor_function.h
         iglberger/adaptor_function.cpp
-        iglberger/observer_push.h
-        iglberger/observer_push.cpp
-        iglberger/observer_pull.h
-        iglberger/observer_pull.cpp
+        iglberger/06_observer/observer_push.h
+        iglberger/06_observer/observer_push.cpp
+        iglberger/06_observer/observer_pull.h
+        iglberger/06_observer/observer_pull.cpp
         iglberger/crtp.h
         iglberger/crtp.cpp
         iglberger/bridge/abstract_engine.h

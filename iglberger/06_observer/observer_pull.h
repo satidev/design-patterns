@@ -4,8 +4,11 @@
 #include <string>
 #include <set>
 
+// Implementation of pull observer.
 namespace Iglberger::ObserverPull
 {
+// Observer base class.
+// Decoupled with subject since it is a template parameter.
 template<typename Subject, typename StateTag>
 struct Observer
 {
@@ -13,9 +16,13 @@ struct Observer
     virtual void update(Subject const &, StateTag property) = 0;
 };
 
+// Subject to be observed by the observers.
 struct Employee
 {
 public:
+    // Subject-specific enumeration tag.
+    // Give information to the pull observer about the type of state change
+    // so that the observer can pull the relevant details.
     enum class StateChange
     {
         NAME_CHANGED,
@@ -58,6 +65,9 @@ public:
 private:
     std::string name_;
     float salary_;
+    // Pointer is a unique identifier.
+    // set avoids duplication of observers.
+    // Non-owning pointers.
     std::set<EmployeeObserver *> observers_;
 };
 
