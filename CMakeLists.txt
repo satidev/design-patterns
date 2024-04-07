@@ -10,12 +10,12 @@ add_executable(design_patterns main.cpp
         iglberger/visitor_variant.cpp
         iglberger/visitor_acyclic.h
         iglberger/visitor_acyclic.cpp
-        iglberger/strategy_ref_sem.h
-        iglberger/strategy_ref_sem.cpp
+        iglberger/05_strategy/strategy_ref_sem.h
+        iglberger/05_strategy/strategy_ref_sem.cpp
         iglberger/command_ref_sem.h
         iglberger/command_ref_sem.cpp
-        iglberger/strategy_val_sem.h
-        iglberger/strategy_val_sem.cpp
+        iglberger/05_strategy/strategy_val_sem.h
+        iglberger/05_strategy/strategy_val_sem.cpp
         iglberger/command_val_sem.h
         iglberger/command_val_sem.cpp
         iglberger/adaptor_object.h

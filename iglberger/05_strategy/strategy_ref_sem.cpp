@@ -4,10 +4,6 @@
 
 namespace Iglberger::StrategyRefSem
 {
-void Circle::draw()
-{
-    draw_strategy_->draw(*this);
-}
 void OpenGLCircleDrawStrategy::draw(const Circle &shape)
 {
     std::cout << "Drawing " << shape.name() << " using OpenGL." << std::endl;
@@ -35,6 +31,7 @@ void Square::draw()
 void strategyExamples()
 {
     auto shapes = std::vector<std::unique_ptr<Shape>>{};
+    // Configuration of strategy at run-time.
     shapes.emplace_back(std::make_unique<Circle>(std::make_unique<OpenGLCircleDrawStrategy>()));
     shapes.emplace_back(std::make_unique<Circle>(std::make_unique<VulkanCircleDrawStrategy>()));
     shapes.emplace_back(std::make_unique<Square>(std::make_unique<OpenGLSquareDrawStrategy>()));
@@ -43,4 +40,5 @@ void strategyExamples()
     for (auto const &shape: shapes)
         shape->draw();
 }
-} //Iglberger::StrategyRefSem namespace.
+
+}// Iglberger::StrategyRefSem namespace.

@@ -4,15 +4,22 @@
 #include <memory>
 #include <string>
 
+// Strategy design pattern based on reference semantics using
+// pointer-to-base class.
 namespace Iglberger::StrategyRefSem
 {
 struct Shape
 {
     virtual ~Shape() = default;
+
+    // We identify draw function as a variation point where the implementation
+    // details can change in the future.
     virtual void draw() = 0;
+
     virtual std::string name() const = 0;
 };
 
+// Encapsulate draw function as a strategy base class.
 template<typename ShapeType>
 struct DrawStrategy
 {
@@ -22,18 +29,25 @@ struct DrawStrategy
 
 struct Circle final: public Shape
 {
+    // Dependency injection during construction.
     explicit Circle(std::unique_ptr<DrawStrategy<Circle>> ptr)
         :
         draw_strategy_{std::move(ptr)}
     {}
 
-    void draw() override;
+    void draw() override
+    {
+        // Delegate to strategy.
+        draw_strategy_->draw(*this);
+    }
 
     std::string name() const override
     {
         return std::string{"Circle"};
     }
+
 private:
+    // Composition over inheritance.
     std::unique_ptr<DrawStrategy<Circle>> draw_strategy_;
 };
 
@@ -76,7 +90,7 @@ struct VulkanSquareDrawStrategy final: public DrawStrategy<Square>
 
 void strategyExamples();
 
-} //Iglberger::StrategyRefSem namespace.
+}// Iglberger::StrategyRefSem namespace.
 
 
 #endif //STRATEGY_REF_SEM_H
