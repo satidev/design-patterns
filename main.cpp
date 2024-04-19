@@ -20,6 +20,7 @@
 //#include "iglberger/extern_polymorph.h"
 #include "iglberger/type_erasure.h"
 #include "iglberger/type_erasure_sbo.h"
+#include "nesteruk/03_factory/abstract_factory.h"
 int main()
 {
     //VisitorGOF::shapeVisitorExamples();
@@ -43,6 +44,7 @@ int main()
     //Iglberger::ExternPolymorph::externPolymorphEx();
     //Iglberger::TypeErasure::typeErasureExample();
     //std::cout << alignof(Struct) << std::endl;
-    Iglberger::TypeErasureSBO::typeErasureExample();
+    //Iglberger::TypeErasureSBO::typeErasureExample();
+    Nesteruk::AbstractFactory::example();
 }
 

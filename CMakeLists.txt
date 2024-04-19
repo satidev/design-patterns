@@ -50,4 +50,7 @@ add_executable(design_patterns main.cpp
         iglberger/type_erasure.h
         iglberger/type_erasure.cpp
         iglberger/type_erasure_sbo.h
-        iglberger/type_erasure_sbo.cpp)
+        iglberger/type_erasure_sbo.cpp
+        nesteruk/03_factory/factory_method.h
+        nesteruk/03_factory/inner_factory.h
+        nesteruk/03_factory/abstract_factory.h)
