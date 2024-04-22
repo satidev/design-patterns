@@ -44,7 +44,6 @@ add_executable(design_patterns main.cpp
         iglberger/decorator_compile_time.h
         iglberger/decorator_compile_time.cpp
         iglberger/singleton.h
-        iglberger/singleton.cpp
         iglberger/extern_polymorph.h
         iglberger/extern_polymorph.cpp
         iglberger/type_erasure.h
