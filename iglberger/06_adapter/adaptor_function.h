@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <numeric>
+#include <cassert>
 
 namespace Iglberger::AdaprorFunc
 {
@@ -20,7 +21,7 @@ public:
 private:
     std::vector<float> data_;
 };
-
+// Adapt the functionalities.
 inline auto cbegin(Image const &img)
 {
     return img.data().cbegin();
@@ -38,7 +39,12 @@ float sumElems(FloatContainer const &c)
     using std::cend;
     return std::accumulate(cbegin(c), cend(c), 0.0f);
 }
-void funcAdaptorExample();
+void funcAdaptorExample()
+{
+    auto const vec = std::vector<float>(5u, 1.0f);
+    auto const img = Image{5u, 1.0f};
+    assert(sumElems(vec) == sumElems(img));
+}
 
 }// Iglberger::AdaprorFunc namespace.
 

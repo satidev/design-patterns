@@ -18,12 +18,9 @@ add_executable(design_patterns main.cpp
         iglberger/05_strategy/strategy_val_sem.cpp
         iglberger/command_val_sem.h
         iglberger/command_val_sem.cpp
-        iglberger/adaptor_object.h
-        iglberger/adaptor_object.cpp
-        iglberger/adaptor_class.h
-        iglberger/adaptor_class.cpp
-        iglberger/adaptor_function.h
-        iglberger/adaptor_function.cpp
+        iglberger/06_adapter/adaptor_object.h
+        iglberger/06_adapter/adaptor_class.h
+        iglberger/06_adapter/adaptor_function.h
         iglberger/06_observer/observer_push.h
         iglberger/06_observer/observer_push.cpp
         iglberger/06_observer/observer_pull.h
